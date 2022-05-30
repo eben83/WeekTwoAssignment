@@ -1,0 +1,297 @@
+@font-face {
+    font-family: Roboto-Black;
+    src: url(./fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: Roboto-BlackItalic;
+    src: url(./fonts/Roboto-BlackItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(./fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto-BoldItalic;
+    src: url(./fonts/Roboto-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(./fonts/Roboto-Italic.ttf);
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(./fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Roboto-LightItalic;
+    src: url(./fonts/Roboto-LightItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(./fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto-MediumItalic;
+    src: url(./fonts/Roboto-MediumItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(./fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: Roboto-ThinItalic;
+    src: url(./fonts/Roboto-ThinItalic.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container-header {
+    background-color: #1f2937;
+    width: 100vw;
+}
+
+.container-wrapper {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    color: #fff;
+}
+
+.header-top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top-nav > h3 {
+    font-size: 24px;
+    color: #f9faf8;
+    cursor: pointer;
+}
+
+.header-links > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    padding: 0 0.7rem;
+}
+
+.header-secondary-link-text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.header-links > a:hover {
+    color: #3882f6;
+}
+
+.header-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+.header-body > .right-side {
+    width: 40%;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder:hover .overlay {
+    opacity: 1;
+}
+
+.image-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    background-color: lightgray;
+}
+
+
+.header-body .left-side {
+    width: 40%;
+    font-family:'Roboto-Bold', sans-serif;
+}
+
+.header-body .left-side h1 {
+    font-size: 48px;
+    color: #f9faf8;
+    font-family: 'Roboto-Bold', sans-serif ;
+}
+
+button {
+    cursor: pointer;
+    width: 5rem;
+    height: 2.5rem;
+    color: white;
+    background-color: #3882f6;
+    border: 1px solid #3882f6;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover .text {
+    display: none;
+}
+
+button .icon {
+    
+}
+
+button .icon:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    right: -20px;
+    transition: 0.5s;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: white;
+    color: #3882f6;
+    
+}
+
+button:hover .icon:after {
+    opacity: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.container-body {
+    width: 100vw;
+}
+
+.container-body h3 {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 36px;
+    font-family: 'Roboto-Bold', sans-serif ;
+}
+
+.information-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-wrapper {
+    width: 10rem;
+    padding-top: 2rem;
+}
+
+.small-image-placeholder {
+    width: inherit;
+    height: 10rem;
+    border: 2px solid #3882f6;
+    border-radius: 12px;
+    position: relative;
+}
+
+.small-image-placeholder:hover .overlay {
+    opacity: 1;
+    border-radius: 9px;
+}
+
+.image-wrapper p {
+    text-align: center;
+}
+
+.insperation-section {
+    background-color: #e5e7eb;
+    margin-top: 5rem;
+}
+
+.context {
+    padding: 7rem;
+    font-size: 36px;
+    color: #1f2937;
+    font-family:'Roboto-ThinItalic', sans-serif;
+}
+.context .context-writer {
+    display: flex;
+    justify-content: end;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family:'Roboto-Bold', sans-serif;
+}
+
+.signup-banner {
+    background-color: #3882f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7rem 15rem ;
+    border-radius: 12px;
+    padding: 3rem;
+    color: white;
+}
+
+.signup-banner h3, p {
+    margin: 0;
+}
+
+.signup-banner h3 {
+    font-size: 24px;
+}
+
+.signup-banner button {
+    background-color: #3882f6;
+    border: 1px solid white;
+    color: #fff;
+}
+
+.signup-banner button:hover {
+    color:#3882f6 ;
+    background-color: #fff;
+}
+
+footer {
+    color: #fff;
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
